@@ -1,0 +1,48 @@
+@model ProjetoFinal.Models.Departamento
+
+@{
+    ViewData["Title"] = "Cadastrar Departamento";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Utilize o formulário abaixo para cadastrar um novo departamento!</p>
+
+<form method="post">
+    <p>
+        <label for="id"><strong>Id:</strong></label>
+        <input type="text" name="id" id="id">
+        <span asp-validation-for="Id" class="text-danger" ></span>
+    </p>
+    <p>
+        <label for="nome"><strong>Nome: </strong></label>
+        <input type="text" name="nome" id="nome">
+        <span asp-validation-for="Nome" class="text-danger" ></span>
+    </p>
+    <p>
+        <label for="sigla"><strong>Sigla: </strong></label>
+        <input type="text" name="sigla" id="sigla">
+        <span asp-validation-for="Sigla" class="text-danger" ></span>
+    </p>
+    <p>
+        <label for="descricao"><strong>Descrição:</strong> </label>
+        <textarea id="descricao" name="descricao" placeholder="Faça uma breve descrição do departamento." style="width:200px;" maxlength="250"></textarea>
+        <span asp-validation-for="Descricao" class="text-danger" ></span>
+    </p>
+    <p>
+        <label for="bloco"><strong>Bloco: </strong></label>
+        <input type="text" name="bloco" id="bloco">
+        <span asp-validation-for="Bloco" class="text-danger" ></span>
+    </p>
+    <p>
+        <label for="telefone"><strong>Telefone: </strong></label>
+        <input type="tel" name="telefone" id="telefone">
+        <span asp-validation-for="Telefone" class="text-danger" ></span>
+    </p>
+    <p>
+        <label for="Email"><strong>E-mail: </strong></label>
+        <input type="email" name="Email" id="Email">
+        <span asp-validation-for="Email" class="text-danger" ></span>
+    </p>
+   
+    <button asp-controller="Departamento" asp-action="Create" class="btn btn-outline-success">Cadastrar</button>
+</form>

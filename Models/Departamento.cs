@@ -19,9 +19,11 @@ namespace ProjetoFinal.Models;
         public string Bloco { get; set; }
 
         [Required]
+        [Phone]
         public string Telefone { get; set; }
 
         [Required]
+        [EmailAddress]
         public string Email { get; set; }
 
         public Departamento() { }
