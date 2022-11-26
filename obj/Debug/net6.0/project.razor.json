@@ -16351,6 +16351,11 @@
       "FilePath": "c:\\Users\\jrald\\Desktop\\ProjetoFinal\\ProjetoFinal\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\jrald\\Desktop\\ProjetoFinal\\ProjetoFinal\\Views\\Aluno\\Create.cshtml",
+      "TargetPath": "Views\\Aluno\\Create.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"

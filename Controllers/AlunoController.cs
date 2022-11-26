@@ -43,7 +43,7 @@ public class AlunoController : Controller
         return View(aluno);
     }
 
-    /*UPDATE*/
+    //UPDATE
     public IActionResult Update (int id)
     {
         Aluno aluno  = _context.Alunos.Find(id);
@@ -72,6 +72,20 @@ public class AlunoController : Controller
         
         _context.Alunos.Update(aluno);
         _context.SaveChanges();
+
+        return RedirectToAction("Index");
+    }
+
+    //CREATE
+    public IActionResult Create (Aluno aluno)
+    {
+        if(!ModelState.IsValid)
+        {
+           return View(aluno);
+        } 
+        
+        _context.Alunos.Add(aluno);
+        _context.SaveChanges();   
 
         return RedirectToAction("Index");
     }

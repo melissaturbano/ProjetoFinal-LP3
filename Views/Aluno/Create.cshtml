@@ -1,0 +1,43 @@
+@model ProjetoFinal.Models.Aluno
+
+@{
+    ViewData["Title"] = "Cadastrar Aluno";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Utilize o formulário abaixo para cadastrar um novo aluno!</p>
+
+    <form method="post">
+        <p>
+            <label for="id"><strong>Id:</strong></label>
+            <input type="text" name="id" id="id">
+            <span asp-validation-for="Id" class="text-danger" ></span>
+        </p>
+        <p>
+            <label for="prontuario"><strong>Prontuário: </strong></label>
+            <input type="text" name="prontuario" id="ramprontuario">
+            <span asp-validation-for="Prontuario" class="text-danger" ></span>
+        </p>
+        <p>
+            <label for="nome"><strong>Nome: </strong></label>
+            <input type="text" name="nome" id="nome">
+            <span asp-validation-for="Nome" class="text-danger" ></span>
+        </p>
+        <p>
+            <label for="turma"><strong>Turma: </strong></label>
+            <input type="text" name="turma" id="turma">
+            <span asp-validation-for="Turma" class="text-danger" ></span>
+        </p>
+        <p>
+            <label for="curso"><strong>Curso: </strong></label>
+            <input type="text" name="curso" id="curso">
+            <span asp-validation-for="Curso" class="text-danger" ></span>
+        </p>
+        <p>
+            <label for="periodo"><strong>Período: </strong></label>
+            <input type="text" name="periodo" id="periodo">
+            <span asp-validation-for="Periodo" class="text-danger" ></span>
+        </p>
+
+        <button asp-controller="Aluno" asp-action="Create" class="btn btn-outline-success">Cadastrar</button>
+    </form>
