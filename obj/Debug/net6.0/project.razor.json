@@ -16318,6 +16318,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\jrald\\Desktop\\ProjetoFinal\\ProjetoFinal\\Views\\Departamento\\Index.cshtml",
+      "TargetPath": "Views\\Departamento\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\jrald\\Desktop\\ProjetoFinal\\ProjetoFinal\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
@@ -16335,6 +16340,11 @@
     {
       "FilePath": "c:\\Users\\jrald\\Desktop\\ProjetoFinal\\ProjetoFinal\\Views\\Aluno\\Show.cshtml",
       "TargetPath": "Views\\Aluno\\Show.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\jrald\\Desktop\\ProjetoFinal\\ProjetoFinal\\Views\\Departamento\\Show.cshtml",
+      "TargetPath": "Views\\Departamento\\Show.cshtml",
       "FileKind": "mvc"
     },
     {
