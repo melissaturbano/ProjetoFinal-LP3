@@ -34,9 +34,12 @@
             <span asp-validation-for="Curso" class="text-danger" ></span>
         </p>
         <p>
-            <label for="periodo"><strong>Período: </strong></label>
-            <input type="text" name="periodo" id="periodo">
-            <span asp-validation-for="Periodo" class="text-danger" ></span>
+            <strong>Selecione o período das aulas:</strong> 
+            <select asp-for="Periodo" >
+                <option value="Matutino">Matutino</option>
+                <option value="Vespertino">Vespertino</option>
+                <option value="Noturno">Noturno</option>
+            </select> 
         </p>
 
         <button asp-controller="Aluno" asp-action="Create" class="btn btn-outline-success">Cadastrar</button>

@@ -35,9 +35,8 @@ else
                     <td>@professor.Disciplina</td>
                     <td>
                         <a class="btn btn-outline-primary" asp-controller="Professor" asp-action="Show" asp-route-id="@professor.Id">Ver</a> 
-                        <a class="btn btn-outline-danger" asp-controller="Professor" asp-action="Delete" asp-route-id="@professor.Id">Deletar</a>
-                        <a class="btn btn-outline-warning" asp-controller="Professor" asp-action="Update" asp-route-id="@professor.Id">Atualizar</a>                      
-                        
+                        <a class="btn btn-outline-warning" asp-controller="Professor" asp-action="Update" asp-route-id="@professor.Id">Atualizar</a>      
+                        <a class="btn btn-outline-danger" asp-controller="Professor" asp-action="Delete" asp-route-id="@professor.Id">Deletar</a>                
                     </td>
                 </tr>
             }

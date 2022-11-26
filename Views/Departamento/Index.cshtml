@@ -38,8 +38,9 @@ else
                     <td>@departamento.Email</td>
                     <td>
                         <a class="btn btn-outline-primary" asp-controller="Departamento" asp-action="Show" asp-route-id="@departamento.Id">Ver</a> 
+                        <a class="btn btn-outline-warning" asp-controller="Departamento" asp-action="Update" asp-route-id="@departamento.Id">Atualizar</a> 
                         <a class="btn btn-outline-danger" asp-controller="Departamento" asp-action="Delete" asp-route-id="@departamento.Id">Deletar</a>
-                        <a class="btn btn-outline-warning" asp-controller="Departamento" asp-action="Update" asp-route-id="@departamento.Id">Atualizar</a>                      
+                                             
                         
                     </td>
                 </tr>

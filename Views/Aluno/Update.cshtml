@@ -28,10 +28,18 @@
             <label for="curso"><strong>Curso: </strong></label>
             <input asp-for="@Model.Curso" required>
         </p>
+
         <p>
-            <label for="periodo"><strong>Período: </strong></label>
-            <input asp-for="@Model.Periodo" required>
+            <strong>Selecione o período das aulas:</strong> 
+            <select asp-for="@Model.Periodo" required>
+                <option value="Matutino">Matutino</option>
+                <option value="Vespertino">Vespertino</option>
+                <option value="Noturno">Noturno</option>
+            </select> 
         </p>
+
+
+
        
         <button asp-controller="Aluno" asp-action="Update" class="btn btn-outline-success">Atualizar</button>
     </form>
