@@ -16353,6 +16353,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\jrald\\Desktop\\ProjetoFinal\\ProjetoFinal\\Views\\Departamento\\Delete.cshtml",
+      "TargetPath": "Views\\Departamento\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\jrald\\Desktop\\ProjetoFinal\\ProjetoFinal\\Views\\Aluno\\Delete.cshtml",
       "TargetPath": "Views\\Aluno\\Delete.cshtml",
       "FileKind": "mvc"

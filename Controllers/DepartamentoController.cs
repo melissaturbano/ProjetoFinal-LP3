@@ -29,5 +29,19 @@ public class DepartamentoController : Controller
         return View(departamento);
      }
 
+     //DELETE
+     public IActionResult Delete(int id)
+    {
+        Departamento departamento = _context.Departamentos.Find(id);
+
+        if(departamento == null)
+        {
+            return NotFound();
+        }
+        _context.Departamentos.Remove(departamento);
+        _context.SaveChanges();
+        return View(departamento);
+    }
+
   
 }
