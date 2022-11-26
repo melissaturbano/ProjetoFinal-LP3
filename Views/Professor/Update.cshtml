@@ -1,0 +1,33 @@
+@model ProjetoFinal.Models.Professor
+
+@{
+    ViewData["Title"] = "Editar Professor";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Utilize o formulário abaixo para editar as informações do professor!</p>
+
+<form method="post">
+    <p>
+        <label for="id"><strong>Id:</strong></label>
+        <input asp-for="@Model.Id" readonly>
+    </p>
+    <p>
+        <label for="prontuario"><strong>Prontuário: </strong></label>
+        <input asp-for="@Model.Prontuario" required>
+    </p>
+    <p>
+        <label for="nome"><strong>Nome: </strong></label>
+        <input asp-for="@Model.Nome" required>
+    </p>
+    <p>
+        <label for="Email"><strong>E-mail: </strong></label>
+        <input asp-for="@Model.Email" required>
+    </p>
+    <p>
+        <label for="disciplina"><strong>Disciplina: </strong></label>
+        <input asp-for="@Model.Disciplina" required>
+    </p>
+    
+    <button asp-controller="Professor" asp-action="Update" class="btn btn-outline-success">Atualizar</button>
+</form>

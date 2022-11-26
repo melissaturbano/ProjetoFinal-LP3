@@ -1,0 +1,38 @@
+@model ProjetoFinal.Models.Professor
+
+@{
+    ViewData["Title"] = "Cadastrar Professor";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Utilize o formulário abaixo para cadastrar um novo professor!</p>
+
+<form method="post">
+    <p>
+        <label for="id"><strong>Id:</strong></label>
+        <input type="text" name="id" id="id">
+        <span asp-validation-for="Id" class="text-danger" ></span>
+    </p>
+    <p>
+        <label for="prontuario"><strong>Prontuário: </strong></label>
+        <input type="text" name="prontuario" id="ramprontuario">
+        <span asp-validation-for="Prontuario" class="text-danger" ></span>
+    </p>
+    <p>
+        <label for="nome"><strong>Nome: </strong></label>
+        <input type="text" name="nome" id="nome">
+        <span asp-validation-for="Nome" class="text-danger" ></span>
+    </p>
+    <p>
+        <label for="Email"><strong>E-mail: </strong></label>
+        <input type="email" name="Email" id="Email">
+        <span asp-validation-for="Email" class="text-danger" ></span>
+    </p>
+    <p>
+        <label for="disciplina"><strong>Disciplina: </strong></label>
+        <input type="text" name="disciplina" id="disciplina">
+        <span asp-validation-for="Disciplina" class="text-danger" ></span>
+    </p>
+    
+    <button asp-controller="Professor" asp-action="Create" class="btn btn-outline-success">Cadastrar</button>
+</form>

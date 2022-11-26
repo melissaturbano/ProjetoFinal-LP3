@@ -1,0 +1,12 @@
+@model ProjetoFinal.Models.Professor
+
+@{
+    ViewData["Title"] = $"Professor: {Model.Nome}";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Id: @Model.Id </p>
+<p>Prontuário: @Model.Prontuario </p>
+<p>Nome: @Model.Nome</p>
+<p>E-mail: @Model.Email</p>
+<p>Disciplina: @Model.Disciplina</p>

@@ -1,0 +1,48 @@
+@model IEnumerable<ProjetoFinal.Models.Professor>
+
+@{
+    ViewData["Title"] = "Professores";
+}
+<h1>@ViewData["Title"]</h1>
+
+@if(Model.Count() == 0)
+{
+    <p>Nenhum professor cadastrado.</p>
+    
+   <a class="btn btn-outline-success" asp-controller="Professor" asp-action="Create">Adicionar</a>
+} 
+else 
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Prontuário</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Disciplina</th>                
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach(var professor in Model)
+            {
+                <tr>
+                    <td>@professor.Id</td>
+                    <td>@professor.Prontuario</td>
+                    <td>@professor.Nome</td>
+                    <td>@professor.Email</td>
+                    <td>@professor.Disciplina</td>
+                    <td>
+                        <a class="btn btn-outline-primary" asp-controller="Professor" asp-action="Show" asp-route-id="@professor.Id">Ver</a> 
+                        <a class="btn btn-outline-danger" asp-controller="Professor" asp-action="Delete" asp-route-id="@professor.Id">Deletar</a>
+                        <a class="btn btn-outline-warning" asp-controller="Professor" asp-action="Update" asp-route-id="@professor.Id">Atualizar</a>                      
+                        
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a class="btn btn-outline-success" asp-controller="Professor" asp-action="Create">Adicionar</a>
+}
