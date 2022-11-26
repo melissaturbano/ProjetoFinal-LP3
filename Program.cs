@@ -7,8 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<GerenciarEscolaContext>(
-    options => options.UseMySQL("server=localhost;database=estudante;user=melissa;password=15186631841")
-   /* options => options.UseMySQL("server=localhost;database=estudante;user=estudante;password=estudante")*/
+    /* options => options.UseMySQL("server=localhost;database=estudante;user=melissa;password=15186631841") */
+    options => options.UseMySQL("server=localhost;database=estudante;user=root;password=estudante")
 );
 
 var app = builder.Build();

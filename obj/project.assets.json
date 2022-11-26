@@ -1397,19 +1397,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jrald\\.nuget\\packages\\": {}
+    "C:\\Users\\Nicole\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jrald\\Desktop\\ProjetoFinal\\ProjetoFinal\\ProjetoFinal.csproj",
+      "projectUniqueName": "C:\\Users\\Nicole\\Documents\\LP3\\ProjetoFinal-LP3\\ProjetoFinal.csproj",
       "projectName": "ProjetoFinal",
-      "projectPath": "C:\\Users\\jrald\\Desktop\\ProjetoFinal\\ProjetoFinal\\ProjetoFinal.csproj",
-      "packagesPath": "C:\\Users\\jrald\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jrald\\Desktop\\ProjetoFinal\\ProjetoFinal\\obj\\",
+      "projectPath": "C:\\Users\\Nicole\\Documents\\LP3\\ProjetoFinal-LP3\\ProjetoFinal.csproj",
+      "packagesPath": "C:\\Users\\Nicole\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nicole\\Documents\\LP3\\ProjetoFinal-LP3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jrald\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Nicole\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"

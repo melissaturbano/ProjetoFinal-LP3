@@ -4,7 +4,6 @@ namespace ProjetoFinal.Models;
 
 public class  GerenciarEscolaContext : DbContext
 {
-
     public DbSet<Aluno> Alunos { get; set; }
     public DbSet<Departamento> Departamentos { get; set; }
     
