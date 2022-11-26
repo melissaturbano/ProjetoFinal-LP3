@@ -1,0 +1,37 @@
+@model ProjetoFinal.Models.Aluno
+
+@{
+    ViewData["Title"] = "Editar Aluno";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Utilize o formulário abaixo para editar as informações do aluno!</p>
+
+    <form method="post">
+        <p>
+            <label for="id"><strong>Id:</strong></label>
+            <input asp-for="@Model.Id" readonly>
+        </p>
+        <p>
+            <label for="prontuario"><strong>Prontuário: </strong></label>
+            <input asp-for="@Model.Prontuario" required>
+        </p>
+        <p>
+            <label for="nome"><strong>Nome: </strong></label>
+            <input asp-for="@Model.Nome" required>
+        </p>
+        <p>
+            <label for="turma"><strong>Turma: </strong></label>
+            <input asp-for="@Model.Turma" required>
+        </p>
+        <p>
+            <label for="curso"><strong>Curso: </strong></label>
+            <input asp-for="@Model.Curso" required>
+        </p>
+        <p>
+            <label for="periodo"><strong>Período: </strong></label>
+            <input asp-for="@Model.Periodo" required>
+        </p>
+       
+        <button asp-controller="Aluno" asp-action="Update" class="btn btn-outline-success">Atualizar</button>
+    </form>

@@ -16313,6 +16313,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\jrald\\Desktop\\ProjetoFinal\\ProjetoFinal\\Views\\Aluno\\Update.cshtml",
+      "TargetPath": "Views\\Aluno\\Update.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\jrald\\Desktop\\ProjetoFinal\\ProjetoFinal\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
