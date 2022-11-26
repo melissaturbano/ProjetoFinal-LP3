@@ -1,0 +1,41 @@
+@model ProjetoFinal.Models.Departamento
+
+@{
+    ViewData["Title"] = "Editar Departamento";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Utilize o formulário abaixo para editar as informações do departamento!</p>
+
+    <form method="post">
+        <p>
+            <label for="id"><strong>Id:</strong></label>
+            <input asp-for="@Model.Id" readonly>
+        </p>
+        <p>
+            <label for="nome"><strong>Nome: </strong></label>
+            <input asp-for="@Model.Nome" required>
+        </p>
+        <p>
+            <label for="sigla"><strong>Sigla: </strong></label>
+            <input asp-for="@Model.Sigla" required>
+        </p>
+        <p>
+            <label for="descricao"><strong>Descrição: </strong></label>
+            <input asp-for="@Model.Descricao" required>
+        </p>
+        <p>
+            <label for="bloco"><strong>Bloco: </strong></label>
+            <input asp-for="@Model.Bloco" required>
+        </p>
+        <p>
+            <label for="telefone"><strong>Telefone: </strong></label>
+            <input asp-for="@Model.Telefone" required>
+        </p>
+        <p>
+            <label for="email"><strong>E-mail: </strong></label>
+            <input asp-for="@Model.Email" required>
+        </p>
+       
+        <button asp-controller="Departamento" asp-action="Update" class="btn btn-outline-success">Atualizar</button>
+    </form>
