@@ -15,9 +15,11 @@ else
         <thead>
             <tr>
                 <th>Id</th>
+                <th>Prontuário</th>
+                <th>Nome</th>
                 <th>Turma</th>
                 <th>Curso</th>
-                <th>Ações</th>
+                <th>Período</th>                
             </tr>
         </thead>
 
@@ -26,8 +28,11 @@ else
             {
                 <tr>
                     <td>@aluno.Id</td>
+                    <td>@aluno.Prontuario</td>
+                    <td>@aluno.Nome</td>
                     <td>@aluno.Turma</td>
                     <td>@aluno.Curso</td>
+                    <td>@aluno.Periodo</td>
                     <td>
                         <a class="btn btn-outline-primary" asp-controller="Aluno" asp-action="Show" asp-route-id="@aluno.Id">Ver</a> 
                         <a class="btn btn-outline-danger" asp-controller="Aluno" asp-action="Delete" asp-route-id="@aluno.Id">Deletar</a>

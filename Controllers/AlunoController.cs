@@ -28,5 +28,18 @@ public class AlunoController : Controller
         return View(aluno);
      }
 
+     public IActionResult Delete(int id)
+    {
+        Aluno aluno = _context.Alunos.Find(id);
+
+        if(aluno == null)
+        {
+            return NotFound();
+        }
+        _context.Alunos.Remove(aluno);
+        _context.SaveChanges();
+        return View(aluno);
+    }
+
   
 }
