@@ -1,7 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+using ProjetoFinal.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<GerenciarEscolaContext>(
+    options => options.UseMySQL("server=localhost;database=estudante;user=melissa;password=15186631841")
+   /* options => options.UseMySQL("server=localhost;database=estudante;user=estudante;password=estudante")*/
+);
 
 var app = builder.Build();
 
