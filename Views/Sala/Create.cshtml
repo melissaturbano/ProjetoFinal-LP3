@@ -1,0 +1,28 @@
+@model ProjetoFinal.Models.Sala
+
+@{
+    ViewData["Title"] = "Cadastrar Sala";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Utilize o formulário abaixo para cadastrar uma nova sala!</p>
+
+<form method="post">
+    <p>
+        <label for="id"><strong>Id:</strong></label>
+        <input type="text" name="id" id="id">
+        <span asp-validation-for="Id" class="text-danger" ></span>
+    </p>
+    <p>
+        <label for="numero"><strong>Número: </strong></label>
+        <input type="text" name="numero" id="numero">
+        <span asp-validation-for="Numero" class="text-danger" ></span>
+    </p>
+    <p>
+        <label for="bloco"><strong>Bloco: </strong></label>
+        <input type="text" name="bloco" id="bloco">
+        <span asp-validation-for="Bloco" class="text-danger" ></span>
+    </p>
+    
+    <button asp-controller="Sala" asp-action="Create" class="btn btn-outline-success">Cadastrar</button>
+</form>

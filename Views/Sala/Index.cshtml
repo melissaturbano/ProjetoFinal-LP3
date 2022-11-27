@@ -1,0 +1,44 @@
+@model IEnumerable<ProjetoFinal.Models.Sala>
+
+@{
+    ViewData["Title"] = "Salas";
+}
+<h1>@ViewData["Title"]</h1>
+
+@if(Model.Count() == 0)
+{
+    <p>Nenhuma sala cadastrada.</p>
+    
+   <a class="btn btn-outline-success" asp-controller="Sala" asp-action="Create">Adicionar</a>
+} 
+else 
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Número</th>
+                <th>Bloco</th>              
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach(var sala in Model)
+            {
+                <tr>
+                    <td>@sala.Id</td>
+                    <td>@sala.Numero</td>
+                    <td>@sala.Bloco</td>
+                    <td>
+                        <a class="btn btn-outline-primary" asp-controller="Sala" asp-action="Show" asp-route-id="@sala.Id">Ver</a> 
+                        <a class="btn btn-outline-warning" asp-controller="Sala" asp-action="Update" asp-route-id="@sala.Id">Atualizar</a>      
+                        <a class="btn btn-outline-danger" asp-controller="Sala" asp-action="Delete" asp-route-id="@sala.Id">Deletar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a class="btn btn-outline-success" asp-controller="Sala" asp-action="Create">Adicionar</a>
+    
+}

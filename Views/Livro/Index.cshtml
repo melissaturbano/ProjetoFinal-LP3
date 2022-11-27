@@ -1,0 +1,45 @@
+@model IEnumerable<ProjetoFinal.Models.Livro>
+
+@{
+    ViewData["Title"] = "Livros";
+}
+<h1>@ViewData["Title"]</h1>
+
+@if(Model.Count() == 0)
+{
+    <p>Nenhum livro cadastrado.</p>
+    
+   <a class="btn btn-outline-success" asp-controller="Livro" asp-action="Create">Adicionar</a>
+} 
+else 
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Autor</th>
+                <th>Título</th>
+                <th>Disciplina</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach(var livro in Model)
+            {
+                <tr>
+                    <td>@livro.Id</td>
+                    <td>@livro.Autor</td>
+                    <td>@livro.Titulo</td>
+                    <td>@livro.Disciplina</td>
+                    <td>
+                        <a class="btn btn-outline-primary" asp-controller="Livro" asp-action="Show" asp-route-id="@livro.Id">Ver</a> 
+                        <a class="btn btn-outline-warning" asp-controller="Livro" asp-action="Update" asp-route-id="@livro.Id">Atualizar</a>      
+                        <a class="btn btn-outline-danger" asp-controller="Livro" asp-action="Delete" asp-route-id="@livro.Id">Deletar</a>                
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a class="btn btn-outline-success" asp-controller="Livro" asp-action="Create">Adicionar</a>
+}

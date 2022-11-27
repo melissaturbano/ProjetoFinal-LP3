@@ -63,6 +63,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/jrald/Desktop/ProjetoFinal/versao2/ProjetoFinal-LP3/Views/Livro/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cm9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jrald/Desktop/ProjetoFinal/versao2/ProjetoFinal-LP3/Views/Livro/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cm9cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jrald/Desktop/ProjetoFinal/versao2/ProjetoFinal-LP3/Views/Livro/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cm9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jrald/Desktop/ProjetoFinal/versao2/ProjetoFinal-LP3/Views/Livro/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cm9cU2hvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jrald/Desktop/ProjetoFinal/versao2/ProjetoFinal-LP3/Views/Livro/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cm9cVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/jrald/Desktop/ProjetoFinal/versao2/ProjetoFinal-LP3/Views/Professor/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -81,6 +101,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/jrald/Desktop/ProjetoFinal/versao2/ProjetoFinal-LP3/Views/Professor/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jrald/Desktop/ProjetoFinal/versao2/ProjetoFinal-LP3/Views/Sala/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsYVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jrald/Desktop/ProjetoFinal/versao2/ProjetoFinal-LP3/Views/Sala/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsYVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jrald/Desktop/ProjetoFinal/versao2/ProjetoFinal-LP3/Views/Sala/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jrald/Desktop/ProjetoFinal/versao2/ProjetoFinal-LP3/Views/Sala/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsYVxTaG93LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jrald/Desktop/ProjetoFinal/versao2/ProjetoFinal-LP3/Views/Sala/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsYVxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/jrald/Desktop/ProjetoFinal/versao2/ProjetoFinal-LP3/Views/Shared/Error.cshtml]

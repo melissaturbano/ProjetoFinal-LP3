@@ -1,0 +1,33 @@
+@model ProjetoFinal.Models.Livro
+
+@{
+    ViewData["Title"] = "Cadastrar Livro";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Utilize o formulário abaixo para cadastrar um novo livro!</p>
+
+<form method="post">
+    <p>
+        <label for="id"><strong>Id:</strong></label>
+        <input type="text" name="id" id="id">
+        <span asp-validation-for="Id" class="text-danger" ></span>
+    </p>
+    <p>
+        <label for="autor"><strong>Autor: </strong></label>
+        <input type="text" name="autor" id="autor">
+        <span asp-validation-for="Autor" class="text-danger" ></span>
+    </p>
+    <p>
+        <label for="titulo"><strong>Título: </strong></label>
+        <input type="text" name="titulo" id="titulo">
+        <span asp-validation-for="Titulo" class="text-danger" ></span>
+    </p>
+    <p>
+        <label for="disciplina"><strong>Disciplina: </strong></label>
+        <input type="text" name="disciplina" id="disciplina">
+        <span asp-validation-for="Disciplina" class="text-danger" ></span>
+    </p>
+    
+    <button asp-controller="Livro" asp-action="Create" class="btn btn-outline-success">Cadastrar</button>
+</form>

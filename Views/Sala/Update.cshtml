@@ -1,0 +1,25 @@
+@model ProjetoFinal.Models.Sala
+
+@{
+    ViewData["Title"] = "Editar Sala";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Utilize o formulário abaixo para editar as informações da sala!</p>
+
+<form method="post">
+    <p>
+        <label for="id"><strong>Id:</strong></label>
+        <input asp-for="@Model.Id" readonly>
+    </p>
+    <p>
+        <label for="numero"><strong>Número: </strong></label>
+        <input asp-for="@Model.Numero" required>
+    </p>
+    <p>
+        <label for="bloco"><strong>Bloco: </strong></label>
+        <input asp-for="@Model.Bloco" required>
+    </p>
+    
+    <button asp-controller="Sala" asp-action="Update" class="btn btn-outline-success">Atualizar</button>
+</form>

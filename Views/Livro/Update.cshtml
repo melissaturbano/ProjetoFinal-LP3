@@ -1,0 +1,29 @@
+@model ProjetoFinal.Models.Livro
+
+@{
+    ViewData["Title"] = "Editar Livro";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Utilize o formulário abaixo para editar as informações do livro!</p>
+
+<form method="post">
+    <p>
+        <label for="id"><strong>Id:</strong></label>
+        <input asp-for="@Model.Id" readonly>
+    </p>
+    <p>
+        <label for="autor"><strong>Autor: </strong></label>
+        <input asp-for="@Model.Autor" required>
+    </p>
+    <p>
+        <label for="titulo"><strong>Título: </strong></label>
+        <input asp-for="@Model.Titulo" required>
+    </p>
+    <p>
+        <label for="disciplina"><strong>Disciplina: </strong></label>
+        <input asp-for="@Model.Disciplina" required>
+    </p>
+    
+    <button asp-controller="Livro" asp-action="Update" class="btn btn-outline-success">Atualizar</button>
+</form>
