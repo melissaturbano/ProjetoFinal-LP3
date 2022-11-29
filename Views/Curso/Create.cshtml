@@ -1,0 +1,38 @@
+@model ProjetoFinal.Models.Curso
+
+@{
+    ViewData["Title"] = "Cadastrar Curso";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Utilize o formulário abaixo para cadastrar um novo curso!</p>
+
+    <form method="post">
+        <p>
+            <label for="id"><strong>Id:</strong></label>
+            <input type="text" name="id" id="id">
+            <span asp-validation-for="Id" class="text-danger" ></span>
+        </p>
+        <p>
+            <label for="nome"><strong>Nome: </strong></label>
+            <input type="text" name="nome" id="nome">
+            <span asp-validation-for="Nome" class="text-danger" ></span>
+        </p>
+        <p>
+            <strong>Formação:</strong> 
+            <select asp-for="Formacao" >
+                <option value="Técnico integrado ao Ensino Médio">Técnico integrado ao Ensino Médio</option>
+                <option value="Técnico Concomitante ou Subsequente">Técnico Concomitante ou Subsequente</option>
+                <option value="Tecnólogo">Tecnólogo</option>
+                <option value="Licenciatura">Licenciatura</option>
+                <option value="Bacharelado">Bacharelado</option>
+            </select> 
+        </p>
+        <p>
+            <label for="duracao"><strong>Duração (em anos): </strong></label>
+            <input type="text" name="duracao" id="duracao">
+            <span asp-validation-for="Duracao" class="text-danger" ></span>
+        </p>
+
+        <button asp-controller="Curso" asp-action="Create" class="btn btn-outline-success">Cadastrar</button>
+    </form>

@@ -8,6 +8,7 @@ public class  GerenciarEscolaContext : DbContext
     public DbSet<Professor> Professores { get; set; }
     public DbSet<Sala> Salas { get; set; }
     public DbSet<Livro> Livros { get; set; }
+    public DbSet<Curso> Cursos { get; set; }
     
     public GerenciarEscolaContext (DbContextOptions<GerenciarEscolaContext> options ) : base (options)
     {

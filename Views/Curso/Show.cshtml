@@ -1,0 +1,11 @@
+@model ProjetoFinal.Models.Curso
+
+@{
+    ViewData["Title"] = $"Curso: {Model.Nome}";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Id: @Model.Id </p>
+<p>Nome: @Model.Nome</p>
+<p>Formação: @Model.Formacao</p>
+<p>Duração: @Model.Duracao</p>

@@ -1,0 +1,35 @@
+@model ProjetoFinal.Models.Curso
+
+@{
+    ViewData["Title"] = "Editar Curso";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Utilize o formulário abaixo para editar as informações do curso!</p>
+
+    <form method="post">
+        <p>
+            <label for="id"><strong>Id:</strong></label>
+            <input asp-for="@Model.Id" readonly>
+        </p>
+        <p>
+            <label for="nome"><strong>Nome: </strong></label>
+            <input asp-for="@Model.Nome" required>
+        </p>
+        <p>
+            <strong>Formação:</strong> 
+            <select asp-for="@Model.Formacao" required>
+                <option value="Técnico integrado ao Ensino Médio">Técnico integrado ao Ensino Médio</option>
+                <option value="Técnico Concomitante ou Subsequente">Técnico Concomitante ou Subsequente</option>
+                <option value="Tecnólogo">Tecnólogo</option>
+                <option value="Licenciatura">Licenciatura</option>
+                <option value="Bacharelado">Bacharelado</option>
+            </select> 
+        </p>
+        <p>
+            <label for="duracao"><strong>Duração (em anos): </strong></label>
+            <input asp-for="@Model.Duracao" required>
+        </p>
+
+        <button asp-controller="Curso" asp-action="Update" class="btn btn-outline-success">Atualizar</button>
+    </form>
